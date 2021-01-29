@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--外部样式表：最大限度使用浏览器的缓存机制，从而加速网页的加载速度 -->
+    <link rel="stylesheet" href="./01.css">
+
+    <!--内部样式表： 只能对一个网页起作用-->
+    <style>
+        p{
+            color: green
+        }
+    </style>
+</head>
+<body>
+    <!--
+        网页分成三个部分： 结构（HTML），表现（CSS），行为（JS）
+        CSS：
+            层叠样式表
+            网页其实是一个多层的结构，通过css可以分别为网页的每一个层来设置样式，而最终我们只能看到网页的最上面一层
+            总而言之：适用于设置网页中元素的样式
+    -->
+    <!--内联样式-->
+    <p style="color: red">你好</p>
+</body>
+
+</html>

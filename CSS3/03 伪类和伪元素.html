@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+        伪类： 不存在的类，用来描述一个元素的特殊状态，比如第一个子元素，被点击的元素，鼠标移入的元素
+            一般都是： 开头： 
+                - 第几个排序
+                ul > li:first-child{}
+                ul > li:last-child{}
+                ul > li:nth-child(第几个/n){}： 如果直接写n，则是0-正无穷，如果写的是2，则是第二个child；2n表示选择偶数位元素(even)；2n+1表示选择奇数位（odd）
+                以上些伪类的排序都是依据所有的子元素进行排序的
+                
+                :fist-of-type
+                :last-of-type
+                :nth-of-type
+                以上这三个伪类是在同种元素中排序
+                - :not()： 否定伪类
+                ul > li:not(:nth-of-type(3)){} ul中不是li的第三个的其他元素
+                - 超链接的伪类
+                没有访问过的链接，访问过的链接，鼠标移入
+                a:link{}用来表示没访问过的链接（正常的链接）
+                a:visited{}用俩表示访问过的链接，由于隐私的原因，所以visited这个伪类只能修改链接颜色
+                :hover（不仅限于a元素）：鼠标移入
+                :active(不仅限于a元素)： 鼠标点击
+
+         */
+        ul > li:first-child{
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>
